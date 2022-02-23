@@ -8,6 +8,7 @@ before:
   hooks:
     - go mod download
 builds:
+- binary: m3o-proxy
   env:
     - CGO_ENABLED=0
     - GO111MODULE=on
