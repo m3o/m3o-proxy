@@ -24,5 +24,6 @@ It will be running on `localhost:8080`. Now call helloworld.
 
 ```
 curl http://localhost:8080/v1/helloworld/Call \
+  -H 'Content-Type: application/json'
   -d '{"name": "Alice"}
 ```
