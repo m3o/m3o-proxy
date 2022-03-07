@@ -6,7 +6,7 @@ import (
 	"os"
 
 	"github.com/gorilla/handlers"
-	"github.com/m3o/m3o-proxy/proxy"
+	"github.com/m3o/m3o-proxy/client"
 )
 
 func main() {
@@ -18,7 +18,7 @@ func main() {
 	}
 
 	// logging handler
-	handler := handlers.CombinedLoggingHandler(os.Stdout, proxy.New(token))
+	handler := handlers.CombinedLoggingHandler(os.Stdout, client.New(token))
 	// register the proxy handler
 	http.Handle("/", handler)
 	// run on port 8080
