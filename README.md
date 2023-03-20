@@ -1,6 +1,8 @@
 # M3O Proxy
 
 The m3o proxy is a client for the M3O apis which you can run locally
+or cloud hosted. Use it to share an M3O account and API key without
+the need for further authentication.
 
 ## Usage
 
